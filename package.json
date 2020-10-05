@@ -1,6 +1,6 @@
 {
   "name": "weatherapp",
-  "homepage": "https://ch543ch543.github.io/weatherapp/" ,
+  "homepage": "http://ch543ch543.github.io/weatherapp/" ,
   "version": "0.1.0",
   "private": true,
   "dependencies": {
