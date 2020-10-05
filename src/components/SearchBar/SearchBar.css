@@ -1,0 +1,40 @@
+.SearchBar {
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1559060017-445fb9722f2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .SearchBar input {
+      border: 0;
+      height: 38px;
+      margin-right: 15px;
+      text-align: center;
+      border-bottom: 1px solid #17a2b8;
+  }
+  
+  .SearchBar input:focus {
+      outline: 0;
+  }
+  
+  .SearchBar .SearchBarChilds {
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+  }
+  
+  .SearchBar .SearchBarChilds .formSearchCity {
+      display: flex;
+  }
+  
+  @media (min-width: 1399px) {
+      .SearchBar {
+          width: 30%;
+          min-height: 100vh;
+      }
+  }
