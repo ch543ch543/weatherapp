@@ -86,7 +86,7 @@ class App extends React.Component {
                 </React.Fragment>
                 <div className = "weatherContainer py-3">
                     <div className='current'>
-                        < className="cityName"> {this.state.city} </h5>
+                        <h5 className="cityName"> {this.state.city} </h5>
                         <p className='currentweather font-size: large'> {`${currentweather[0]}°C`} </p>
                         <h6 className='descrip'> {description[0]} </h6>
                     </div>
