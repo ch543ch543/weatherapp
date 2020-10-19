@@ -35,6 +35,6 @@
   @media (min-width: 1399px) {
       .SearchBar {
           width: 30%;
-          min-height: 100vh;
+          height: 100vh;
       }
   }

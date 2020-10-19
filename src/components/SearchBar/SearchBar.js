@@ -10,6 +10,8 @@ class SearchBar extends React.Component {
         e.preventDefault();
         if (this.state.city === "") {
           alert("City can not be empty");
+        } else if (e.key === 'Enter') {
+            this.props.searchCity(this.state.city);
         } else {
           this.props.searchCity(this.state.city);
         }
