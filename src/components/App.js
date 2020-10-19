@@ -69,7 +69,7 @@ class App extends React.Component {
         })
 
         const currentweather = this.state.currenttemp.map(el => {
-            return parseInt(el.app_temp)
+            return `${parseInt(el.app_temp)}°C`
         })
 
         
@@ -87,7 +87,7 @@ class App extends React.Component {
                 <div className = "weatherContainer py-3">
                     <div className='current'>
                         <h5 className="cityName"> {this.state.city} </h5>
-                        <p className='currentweather font-size: large'> {`${currentweather[0]}°C`} </p>
+                        <p className='currentweather font-size: large'> {currentweather[0]} </p>
                         <h6 className='descrip'> {description[0]} </h6>
                     </div>
                     <div className='daily'>

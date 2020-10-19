@@ -7,6 +7,10 @@
      0 0 40px rgba(128,128,128, 0.1) inset;
 }
 
+.card{
+    height: 250px;
+}
+
 .WeatherBody:hover {
     cursor: pointer; 
     box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5)
