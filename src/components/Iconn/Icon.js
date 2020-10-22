@@ -35,6 +35,9 @@ const Icon = (props) => {
         case 502:
             return <img className='icon'src={Rain} alt={Rain} />
             break;
+        case 501:
+            return <img className='icon'src={Rain} alt={Rain} />
+            break;
         case 500:
             return <img className='icon'src={Rain} alt={Rain} />
             break;  

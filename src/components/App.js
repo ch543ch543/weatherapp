@@ -42,7 +42,7 @@ class App extends React.Component {
                 currenttemp: currenttemp,
                 city: city
              });
-             console.log(this.state.currenttemp[0].app_temp);
+             console.log(this.state.dailytemp);
     }
 
     render() {
@@ -86,16 +86,17 @@ class App extends React.Component {
                 </React.Fragment>
                 <div className = "weatherContainer py-3">
                     <div className='current'>
+                        <h6 className="cityName"> {'NOW'} </h6>
                         <h5 className="cityName"> {this.state.city} </h5>
                         <p className='currentweather font-size: large'> {currentweather[0]} </p>
                         <h6 className='descrip'> {description[0]} </h6>
                     </div>
                     <div className='daily'>
-                        <WeatherBody date={date[0]} day={'Mon'} icon={icon[0]} minTemp={minTemp[0]} maxTemp={maxTemp[0]} />
-                        <WeatherBody date={date[1]} day={'Tue'} icon={icon[1]} minTemp={minTemp[1]} maxTemp={maxTemp[1]} />
-                        <WeatherBody date={date[2]} day={'Wed'} icon={icon[2]} minTemp={minTemp[2]} maxTemp={maxTemp[2]} />
-                        <WeatherBody date={date[3]} day={'Thu'} icon={icon[3]} minTemp={minTemp[3]} maxTemp={maxTemp[3]} />
-                        <WeatherBody date={date[4]} day={'Fri'} icon={icon[4]} minTemp={minTemp[4]} maxTemp={maxTemp[4]} />
+                        <WeatherBody date={date[0]} icon={icon[0]} minTemp={minTemp[0]} maxTemp={maxTemp[0]} />
+                        <WeatherBody date={date[1]} icon={icon[1]} minTemp={minTemp[1]} maxTemp={maxTemp[1]} />
+                        <WeatherBody date={date[2]} icon={icon[2]} minTemp={minTemp[2]} maxTemp={maxTemp[2]} />
+                        <WeatherBody date={date[3]} icon={icon[3]} minTemp={minTemp[3]} maxTemp={maxTemp[3]} />
+                        <WeatherBody date={date[4]} icon={icon[4]} minTemp={minTemp[4]} maxTemp={maxTemp[4]} />
                     </div>
                 </div>
             </div>
